@@ -87,7 +87,8 @@ $(function () {
   // one time-step of the timeline loop
   var step = function () {
     // print info
-    info.html('🐟 ' + sea.population.length);
+    var fishUnicode = '\u{1F41F}'; //🐟
+    info.html(fishUnicode + ' ' + sea.population.length);
 
     // clear the screen (with a fade)
     ctx.globalAlpha = 0.8;

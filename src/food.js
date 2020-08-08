@@ -31,8 +31,9 @@ Food.prototype = {
     ctx.fillStyle = '#000000';
     ctx.globalAlpha = this.energy > 0 ? 0.5 : this.radius / 100;
 
+    var foodUnicode = '\u{1F33F}'; //🌿
     ctx.fillText(
-      '🌿',
+      foodUnicode,
       this.location.x - centerRadius,
       this.location.y + centerRadius
     );
